@@ -1,0 +1,87 @@
+body {
+
+
+    margin:0;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;     /* where it says margin: 0 auto; thats how you center the container*/
+    border-radius: 5px;  /* this border-radius makes the ends of the square rounder*/
+    margin-top: 50px;
+
+
+}
+
+h1  {
+
+    font-size: 36px;
+    text-align:center;
+    margin-top: 0;  /* this margin top makes it so it gets rid of the empty space above age calculator.*/
+    margin-bottom: 20px; /*this margin bottom does the same thing */
+
+
+
+
+}
+
+.form {
+
+    display: flex; /*to bring everything next to each other*/
+    flex-direction: column;  /*to bring everything on top of each other*/
+    align-items: center;  /* brings all the items center in the form */
+
+}
+
+label{
+
+    font-weight: bold;   /* this is changing the "enter your date of birth section */
+    margin-bottom: 10px; /* the margin bottom created space between enter your date of birth and the input button */
+    
+}
+
+input {
+  /* this section is effecting the button where you can choose your birth date */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    
+}
+
+button {
+    
+    /* this section is for the calculate age button */
+
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius:  5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color .3s ease; /* this transition makes the tone of the calculate age button have a smoother transition when you hover over it */
+
+}
+
+button:hover {        /* this button hover make it so when the cursor is hovering over the button it makes a darker tone over it */
+    background-color:#0062cc;   /* this is the color i used for the darker tone */
+
+}
+
+#result {
+
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+
+
+}
